@@ -19,6 +19,7 @@
 #faciliar la optmizacion de muchos sistemas Gnu/Linux.
 
  zenity --info --text "Bienvenidos al asistente de optimizacion para Ubuntu. SRKDOS"
+ zenity --info --text "En ciertos puntos el sistema preguntara si desea proceder, tendra que aceptarlos"
 
 # Actualizamos lista de repositorios
 echo "-----------------------------------------" 
@@ -39,8 +40,10 @@ sudo apt-get upgrade && sudo apt-get dist-upgrade
 
 #Actualizar y agregar controladores para hardware nuevo, después de actualización.
 echo "-------------------------------------------"
-echo "|Repositorio de controladores libres para |"
-echo "|tarjetas gráficas de Intel, Ati y Nvidia |"
+echo "|Repositorio de controladores libres para  |"
+echo "|tarjetas gráficas de Intel, Ati y Nvidia  |"
+echo "|En este punto, debe presionar enter para  |"
+echo "|proceder en la actualizacion, este atento |"
 echo "-------------------------------------------"
 sudo add-apt-repository ppa:xorg-edgers/ppa
 sudo apt-get update && sudo apt-get upgrade
